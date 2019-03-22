@@ -1,0 +1,196 @@
+/* General */
+* {
+    box-sizing: border-box;
+}
+
+/* Some stylings to affect the whole body of the page */
+body {
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2d3c49;
+   }
+
+/* Header styling and its interior boxes */
+header {
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #7d97ad;
+    padding-top: 10px;
+}
+
+.logo-box {
+    text-align: left;
+    padding: 15px 0 0 0;
+    width: 40%;
+    float: left;
+}
+
+.name-box {
+    text-align: right;
+    padding: 15px 0 0 0;
+    width: 90%;
+    float: right;
+}
+
+.logo-box,
+.name-box {
+    margin: 10px;
+}
+
+.name, 
+.job-title {
+    margin: 3px auto;
+}
+
+.name {
+    font-size: 1.7em;
+}
+
+.job-title {
+    font-size: 0.8em;
+}
+
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-img {
+    padding: 20px;
+}
+
+/* To make the header and the portfolio-container responsive */
+.row {
+    max-width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    margin: 1.1em;
+}
+
+/* This is the styling of the featured class of the section element */
+.featured {
+    margin-top: 25px;
+    width: 100%;
+}
+
+/* section header that has a content of (Featured Work) */
+.section-header {
+    text-align: left;
+    font-size: 1.3em;
+    margin: 20px;
+    max-width: 100%;
+    padding: 0;
+    color: #7d97ad;
+}
+
+/* Set the font size of all the text of h3 */
+.h3-text {
+    font-size: 1em;
+}
+
+/* Links styling */
+a {
+    text-decoration: none;
+    color: #616161;
+    padding: 1.5em;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #212121;
+}
+
+.github-link {
+    padding: 0;
+    font-size: 1em;
+}
+
+/* Shared styling to the footer and the .portfolio-box */
+footer,
+.portfolio-box {
+    text-align: center;
+    margin: 0.5em;
+    width: 100%;
+}
+
+/* Footer styling */
+footer {
+    border-top: 1px solid #7d97ad;
+    font-size: 1em;
+}
+
+.owner,
+.source,
+.github-link {
+    margin: 5px 0;
+}
+
+/* This is the media query styling */
+
+/* Breakpoint 1 */
+@media screen and (min-width: 850px) {
+    body {
+        max-width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Breakpoint 2 */
+@media screen and (min-width: 500px) and (max-width: 850px) {
+    #learn-coding,
+    #html5-course {
+        width: 40%;
+    }
+
+    #front-end-course {
+        width: 50%;
+    }
+
+    .section-header {
+        font-size: 1em;
+        text-align: center;
+        margin: 0;
+    }
+
+    .portfolio-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Breakpoint 3 */
+@media screen and (max-width: 500px) {
+    header {
+        justify-content: center;
+    }
+
+    .logo-box,
+    .name,
+    .job-title {
+        text-align: center;
+    }
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .section-header {
+        font-size: 0.8em;
+        text-align: center;
+        margin: 0;
+    }
+
+    .portfolio-box {
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    footer,
+    .github-link {
+        font-size: 12px;
+    }
+}
